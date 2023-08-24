@@ -1,0 +1,175 @@
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: black;
+}
+
+.header {
+    max-height: 20%;
+    padding: 50px;
+}
+
+.imgpart img {
+    margin-right: 20px;
+    background-size: cover;
+}
+
+.imgpart {
+    display: flex;
+}
+
+.intro {
+    letter-spacing: 0.2rem;
+    flex: 0.8;
+}
+
+.contact .ul-class {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.ul-class .li-class {
+    padding: 4px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.li-class i {
+    margin-right: 10px;
+}
+
+.line {
+    margin: 0 auto;
+    width: 80%;
+    border: none;
+    border-top: 1px solid black;
+}
+
+section {
+    padding: 2rem;
+}
+
+.body_part {
+    padding: 50px;
+    display: flex;
+}
+
+.body_part h1 {
+    position: relative;
+    display: inline-block;
+}
+
+.body_part h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1px; 
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.body_part h1:hover::after {
+    transform: scaleX(1);
+}
+.first_half {
+    flex: 0.8;
+}
+
+.second_half {
+    flex: 1;
+}
+
+.body_part h3,p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.body_part h1 {
+    margin-top: 20px;
+}
+
+.education span, .lang span {
+    font-size: 13px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.skills .box {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box .percent {
+    width: 100%;
+    height: 10px;
+    background: grey;
+}
+
+.skills .box .percent .in_per {
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #fd4766;
+}
+
+.projects span {
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+a:hover {
+    color: green;
+}
+
+@media (max-width: 677px),(min-width: 375px) {
+    .imgpart img {
+        height: 180px;
+        width: 120px;
+        background-size: cover;
+        margin-right: 10px;
+    }
+
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .line {
+        width: 50%;
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    .first_half {
+        flex: 0.5;
+    }
+
+    .second_half {
+        flex: 0.5;
+    }
+}
+
+@media (min-width: 992px) {
+    .imgpart img {
+        height: 180px;
+        width: 170px;
+        margin-right: 20px;
+    }
+}
